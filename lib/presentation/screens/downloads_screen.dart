@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/downloads/empty_downloads_view.dart';
 
 class DownloadsScreen extends StatelessWidget {
   const DownloadsScreen({super.key});
@@ -7,18 +8,7 @@ class DownloadsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: SafeArea(
-        child: Center(
-          child: Text(
-            'Downloads',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      ),
+      body: SafeArea(child: const EmptyDownloadsView()),
     );
   }
 }
