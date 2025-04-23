@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/banner_section.dart';
+import 'package:prime_video_clone/presentation/widgets/banner_slider.dart';
 import '../widgets/category_chip.dart';
 import '../widgets/featured_section.dart';
 import '../widgets/continue_watching_section.dart';
@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: const [
-              BannerSection(),
+              BannerSlider(),
               CategoryChip(),
               FeaturedSection(),
               ContinueWatching(),

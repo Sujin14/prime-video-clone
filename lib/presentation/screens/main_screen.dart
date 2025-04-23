@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prime_video_clone/presentation/screens/store_screen.dart';
+import 'package:prime_video_clone/presentation/screens/downloads_screen.dart';
 import '../screens/search_screen.dart';
 import 'home_screen.dart';
 
@@ -17,9 +18,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const StoreScreen(),
     const SearchScreen(),
-    const Center(
-      child: Text("Downloads", style: TextStyle(color: Colors.white)),
-    ),
+    const DownloadsScreen(),
   ];
 
   void _onItemTapped(int index) {
